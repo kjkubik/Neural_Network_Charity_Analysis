@@ -6,30 +6,29 @@ Alphabet Soup wants to know when their donations to charities will be most succe
 ### Proceedure: 
 The first thing needing to be accomplished was the preprocessing of the data for our deep neural network model.
 To do so, we: 
-    - determined columns that were features, targets and 'throw-aways'
-    - removed the 'throw-away columns
-    - checked the number of unique values left for each column 
+- determined columns that were features, targets and 'throw-aways'
+- removed the 'throw-away columns
+- checked the number of unique values left for each column 
 ![](images/unique_values_for_original_columns.png)
    
-   - get application type and classification columns bucketed
+- get application type and classification columns bucketed
 ![](application_type_buckets.png)
 
 ![](classification_buckets.png)
 
-    - generate the categorical variable list
+- generate the categorical variable list
 ![](categorical_variable_list.png)
     
-    - encoding with OneHotEncoder
+- encoding with OneHotEncoder
+
+- replace the original columns with OneHotEncoders encoded features
     
-    - replace the original columns with OneHotEncoders encoded features
-    
-    - train, fit/test and scale the data
+- train, fit/test and scale the data
     
 Next, we compile, train and evaluate the deep neural network model. Here's the summary of the model setup: 
 ![](Summary.png)
 
 After that, we compile and after evaluating the module we can see it is not performing very well:
-
 ![](Evaluation_of_Nueral_Network.png)
 
 So, we decide to attempt working with TensorFlow to optimize my model in order to achieve a target predictive accuracy higher than 75%. 
