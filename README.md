@@ -12,11 +12,13 @@ To do so, we:
 ![](images/unique_values_for_original_columns.png)
    
 - get application type and classification columns bucketed
+
 ![](application_type_buckets.png)
 
 ![](classification_buckets.png)
 
 - generate the categorical variable list
+
 ![](categorical_variable_list.png)
     
 - encoding with OneHotEncoder
@@ -26,9 +28,11 @@ To do so, we:
 - train, fit/test and scale the data
     
 Next, we compile, train and evaluate the deep neural network model. Here's the summary of the model setup: 
+
 ![](Summary.png)
 
 After that, we compile and after evaluating the module we can see it is not performing very well:
+
 ![](Evaluation_of_Nueral_Network.png)
 
 So, we decide to attempt working with TensorFlow to optimize my model in order to achieve a target predictive accuracy higher than 75%. 
