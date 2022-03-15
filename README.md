@@ -67,3 +67,19 @@ After training the model, we find that there aren't any differences. We are stil
 ![](images/thirdevaluation)
 
 In conclusion, we are getting 72% after these three attempts. I is my guess at this point that accuracy cannot be increased with this model. Using a different model may prove to be a more useful way to spend my time.
+
+Here are some of the regression modules I might try:
+-Linear Regression.
+-Ridge Regression. (Thumbs up on this model. Below is a description.)
+-Neural Network Regression.
+-Lasso Regression - works with Multicollinearity.
+-Decision Tree Regression. (After evaluating the dataset. I could see there wasn't much change in the dataset. This might work, too.)
+-Random Forest.
+-KNN Model. (maybe...I don't know. I would have to investigate more before desiding.)
+-Support Vector Machines (SVM) - Stocks
+
+Out of these Ridge Regression sounds promising. It is another popularly used linear regression algorithm in Machine Learning. If only one independent variable is being used to predict the output, it will be termed as a linear regression ML algorithm. ML experts prefer Ridge regression as it minimizes the loss encountered in linear regression (discussed above). In place of OLS (Ordinary Least Squares), the output values are predicted by a ridge estimator in ridge regression. The above-discussed linear regression uses OLS to predict the output values.
+
+It also may be smart to plot some of these (since they are linear models).
+
+Resource: https://www.jigsawacademy.com/popular-regression-algorithms-ml/
