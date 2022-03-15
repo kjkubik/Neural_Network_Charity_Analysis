@@ -1,4 +1,5 @@
 # Neural_Network_Charity_Analysis
+![](images/imageofdlnn.png)
 
 ### Purpose: 
 Alphabet Soup wants to know when their donations to charities will be most successful.  By creating a binary classifier we are hoping to be able to help Alphabet Soup know exactly what works and what doesn't work in the world of Charity.
@@ -10,30 +11,30 @@ To do so, we:
 - determined columns that were features, targets and throw-aways
 - removed the 'throw-away columns
 - checked the number of unique values left for each column
+  
 ![](images/unique_values_for_original_columns.png)
 
 - get application type and classification columns bucketed
 - generate the categorical variable list
 
 ![](images/categorical_variable_list.png)
-    
-- encoding with OneHotEncoder
 
+- encoding with OneHotEncoder
 - replace the original columns with OneHotEncoders encoded features
-    
 - train, fit/test and scale the data
-    
-Next, we compile, train and evaluate the deep neural network model. Here's the summary of the model setup: 
+
+Next, we compile, train and evaluate the deep neural network model. Here's the summary of the model setup:
 
 ![](images/Summary.png)
 
-After that, we compile and after evaluating the module we can see it is not performing very well:
+After that, we compile and after evaluating the module we can see it is not performing very well. 
 
-![](images/ion_of_Nueral_Network.png)
+![](images/Evaluation_of_Nueral_Network.png)
 
-So, we decide to attempt working with TensorFlow to optimize my model in order to achieve a target predictive accuracy higher than 75%. 
 
-The following was attempted to optimize my model to achieve a higher target predictive accuracy:
+We need to get better performance if at all possible. We attempt to do so by working with TensorFlow to optimize the model in order to achieve a target predictive accuracy higher than 75%. 
+
+The following can be attempted to optimize a model to achieve a higher target predictive accuracy:
 
 - Adjusting the input data to ensure that there are no variables or outliers that are causing confusion in the model, such as:
 - Dropping more or fewer columns.
@@ -44,9 +45,25 @@ The following was attempted to optimize my model to achieve a higher target pred
 - Using different activation functions for the hidden layers.
 - Adding or reducing the number of epochs to the training regimen.
     
+### Results (3 attemps completed): 
 
+#### Attempt 1: Dropping of columns. 
 
-### Results: 
+![](images/firstattempt.png)
 
-- Deliverable 3: Optimize the Model
-- Deliverable 4: A Written Report on the Neural Network Model (README.md)
+After training the model, we find that there aren't any differences. We are still at 72%.
+
+![](images/firstevaluation.png)
+
+#### Attempt #2 - Do both adding more hidden layers and dropping columns)
+
+![](images/secondattempt.png)
+
+After training the model, we find that there aren't any differences. We are still at 72%.
+
+![](images/thirdattempt.png)
+
+After training the model, we find that there aren't any differences. We are still at 72%.
+![](images/thirdevaluation)
+
+In conclusion, we are getting 72% after these three attempts. I is my guess at this point that accuracy cannot be increased with this model. Using a different model may prove to be a more useful way to spend my time.
